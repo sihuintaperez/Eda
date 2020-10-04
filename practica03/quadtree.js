@@ -79,8 +79,8 @@ class QuadTree {
 		if(this.boundary.intersects(range))
 		{
 			for(let p of this.points){
-				count++;
-				if(range.contains(p)) {found.push(p);}//count++;}			
+				//count++;
+				if(range.contains(p)) {found.push(p);count++;}			
 			}
 			if(this.divided){
 			this.northeast.query(range,found);
